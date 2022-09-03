@@ -9,7 +9,10 @@ from pangeo_forge_recipes.recipes import XarrayZarrRecipe
 # so instead we crawl the NCEI server.
 
 url_base = "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/"
-years = range(1996, 2022)
+
+# NOTE: for this demo the year range has been truncated!
+years = range(1996, 1999)
+
 file_list = []
 fs = HTTPFileSystem()
 for year in years:
@@ -17,7 +20,6 @@ for year in years:
         lambda x: x.endswith('.nc'),
         fs.ls(url_base + str(year), detail=False)
     ))
-# comment to re-trigger ci
 pattern = pattern_from_file_sequence(
     file_list,
     "time",
