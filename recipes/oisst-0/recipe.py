@@ -7,6 +7,7 @@ start_date = "1981-09-01"
 
 
 def format_function(time):
+    import pandas as pd
     base = pd.Timestamp(start_date)
     day = base + pd.Timedelta(days=time)
     input_url_pattern = (
