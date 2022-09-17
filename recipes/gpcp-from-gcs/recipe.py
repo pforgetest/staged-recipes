@@ -2,7 +2,7 @@ import pandas as pd
 from pangeo_forge_recipes.patterns import ConcatDim, FilePattern
 from pangeo_forge_recipes.recipes import XarrayZarrRecipe
 
-dates = pd.date_range("1996-10-01", "2022-02-01", freq="D")
+dates = pd.date_range("1996-10-01", "1999-02-01", freq="D")
 
 
 def make_url(date):
