@@ -12,7 +12,7 @@ def format_function(time):
     base = pd.Timestamp(start_date)
     day = base + pd.Timedelta(days=time)
     input_url_pattern = (
-        ".noaa.gov/data/sea-surface-temperature-optimum-interpolation"
+        "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation"
         "/v2.1/access/avhrr/{day:%Y%m}/oisst-avhrr-v02r01.{day:%Y%m%d}.nc"
     )
     return input_url_pattern.format(day=day)
