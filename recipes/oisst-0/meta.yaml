@@ -15,7 +15,7 @@ provenance:
       url: https://www.ncdc.noaa.gov/oisst
   license: "CC-BY-4.0"
 maintainers:
-  - name: "Charles  Stern"
+  - name: "Charles Stern"
     orcid: "0000-0002-4078-0852"
     github: cisaacstern
 bakery:
