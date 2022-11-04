@@ -1,0 +1,23 @@
+title: "Hadley Centre Sea Ice and Sea Surface Temperature (HadISST)"
+description: "Analysis-ready Zarr datasets derived from HadISST NetCDF"
+recipes:
+  - id: hadisst
+    object: "recipe:recipe"
+provenance:
+  providers:
+    - name: "Met Office Hadley Centre"
+      description: "Met Office Hadley Centre"
+      roles:
+        - producer
+        - licensor
+      url: https://www.metoffice.gov.uk/hadobs/hadisst/index.html
+  license: "proprietary"
+  license_link:
+    title: "UK Non-Commercial Government License" 
+    url: https://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/
+maintainers:
+  - name: "Julius Busecke"
+    orcid: "0000-0001-8571-865X"
+    github: jbusecke
+bakery:
+  id: "pangeo-ldeo-nsf-earthcube"
