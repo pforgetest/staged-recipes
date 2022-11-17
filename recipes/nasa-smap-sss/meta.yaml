@@ -10,7 +10,7 @@ provenance:
         - producer
         - licensor
       url: https://smap.jpl.nasa.gov/
-  license: 'CC-BY-4.0' # TODO: double-check before merging
+  license: 'CC-BY-4.0' 
 maintainers:
   - name: 'Charles Stern'
     github: cisaacstern
